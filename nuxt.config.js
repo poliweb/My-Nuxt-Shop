@@ -43,6 +43,10 @@ export default {
       src: '~/plugins/vue-owl-carousel.js',
       mode: 'client'
     },
+    {
+      src: '~/plugins/ScrollTrigger.js',
+      mode: 'client'
+    },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -54,6 +58,8 @@ export default {
     '@nuxtjs/tailwindcss',
     // https://image.nuxtjs.org/getting-started/installation
     '@nuxt/image',
+    // https://www.npmjs.com/package/nuxt-gsap-module
+    'nuxt-gsap-module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -89,6 +95,9 @@ export default {
     },
   },
 
+  gsap: {
+    /* Module Options https://www.npmjs.com/package/nuxt-gsap-module*/
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ['vue-agile'],
