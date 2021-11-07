@@ -52,6 +52,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://image.nuxtjs.org/getting-started/installation
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -70,6 +72,21 @@ export default {
     manifest: {
       lang: 'en'
     }
+  },
+  image: {
+    // Options: https://image.nuxtjs.org/api/options
+    cloudinary: {
+      baseURL: 'https://res.cloudinary.com/poliweb/image/upload/Fashen/'
+    },
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

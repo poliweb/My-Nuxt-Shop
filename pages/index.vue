@@ -25,7 +25,8 @@
             :autoplayHoverPause="true"
             :responsive="{
               0: { items: 1, nav: false },
-              768: { items: 2, nav: true },
+              540: { items: 2, nav: true },
+              1024: { items:3, nav: true},
               1280: { items: 4, nav: true },
               1920: { items: 4, nav: true }
             }"
@@ -35,10 +36,13 @@
               :key="CarouselItem.index"
               class="bg-indigo-100 p-6 rounded-lg"
             >
-              <img
+              <nuxt-img
                 class="h-40 rounded w-full object-cover object-center mb-6"
+                provider="cloudinary"
                 :src="(CarouselItem.img)"
                 alt="content"
+                width="302" height="160"
+                fit="cover"
               />
               <h3
                 class="tracking-widest text-indigo-500 text-xs font-medium title-font uppercase"
@@ -119,56 +123,56 @@ export default {
       // CarouselItems: данные для блока "Section 1 carousel"
       CarouselItems: [
         {
-          img: "https://res.cloudinary.com/poliweb/image/upload/v1636096462/Fashen/catwalk_1920_dgoled.jpg",
+          img: "catwalk_1920_dgoled.jpg",
           title: "Title - Заголовок",
           subtitle: "SubTitle",
           description:
             'Enthusiastically disintermediate web-enabled "outside the box" thinking without fully researched.',
         },
         {
-          img: "https://res.cloudinary.com/poliweb/image/upload/v1636094319/Fashen/woman-5_1920_xoh24f.jpg",
+          img: "woman-5_1920_xoh24f.jpg",
           title: "Девушка и авто",
           subtitle: "Активный отдых",
           description:
             "Interactively customize maintainable e-business and maintainable web-readiness. Dynamically cultivate wireless.",
         },
         {
-          img: "https://res.cloudinary.com/poliweb/image/upload/v1636094321/Fashen/woman-2_1920_lsote0.jpg",
+          img: "woman-2_1920_lsote0.jpg",
           title: "Девушка на авто",
           subtitle: "Активный летний отдых",
           description:
             "Phosfluorescently extend intuitive infomediaries via reliable systems. Completely grow covalent.",
         },
         {
-          img: "https://res.cloudinary.com/poliweb/image/upload/v1636094398/Fashen/girl-2_1920_r09dll.jpg",
+          img: "girl-2_1920_r09dll.jpg",
           title: "Девушка и мотоцикл",
           subtitle: "Отдых на мотоцикле",
           description:
             "Synergistically transform transparent channels through principle-centered vortals. Dynamically grow 2.0.",
         },
         {
-          img: "https://res.cloudinary.com/poliweb/image/upload/v1636094396/Fashen/hands_1920_mrblxl.jpg",
+          img: "hands_1920_mrblxl.jpg",
           title: "Ручные часы",
           subtitle: "Течение времени",
           description:
             "Credibly exploit efficient technologies and fully tested scenarios. Assertively myocardinate.",
         },
         {
-          img: "https://res.cloudinary.com/poliweb/image/upload/v1636094395/Fashen/neckties_1920_ykn7ky.jpg",
+          img: "neckties_1920_ykn7ky.jpg",
           title: "Галстук на каждый день",
           subtitle: "Цветовое разнообразие",
           description:
             "Phosfluorescently revolutionize high standards in synergy and multidisciplinary results. Uniquely.",
         },
         {
-          img: "https://res.cloudinary.com/poliweb/image/upload/v1636094319/Fashen/wrist-watch_1920_mkat4p.jpg",
+          img: "wrist-watch_1920_mkat4p.jpg",
           title: "Подарок для мужчины",
           subtitle: "Активный подход к выбору",
           description:
             "Progressively administrate principle-centered niche markets without long-term high-impact interfaces. Objectively.",
         },
         {
-          img: "https://res.cloudinary.com/poliweb/image/upload/v1636094398/Fashen/man_1920_pavzmx.jpg",
+          img: "man_1920_pavzmx.jpg",
           title: "Мужчина и авто",
           subtitle: "Активный отдых",
           description:

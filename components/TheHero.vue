@@ -5,10 +5,12 @@
         <section class="animation-style-01 text-gray-600 body-font bg-purple-700">
           <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div class="slide-content lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-              <img
+              <nuxt-img
                 class="object-cover object-center rounded"
                 alt="hero"
-                src="https://res.cloudinary.com/poliweb/image/upload/v1636034513/Shop/girl_1920_inkahz.jpg"
+                provider="cloudinary"
+                src="girl_1920_iwvucn.jpg"
+                width="512" height="341"
               />
             </div>
             <div
@@ -35,10 +37,12 @@
         <section class="animation-style-01 text-gray-600 body-font bg-pink-700">
           <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div class="slide-content lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-              <img
+              <nuxt-img
                 class="object-cover object-center rounded"
                 alt="hero"
-                src="https://res.cloudinary.com/poliweb/image/upload/v1636034548/Shop/women-office_1920_gbo0eb.jpg"
+                provider="cloudinary"
+                src="women-office_1920_rj7adp"
+                width="512" height="341"
               />
             </div>
             <div
