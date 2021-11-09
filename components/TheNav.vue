@@ -63,8 +63,7 @@ export default {
 .bg-coral {
   background-color: coral;
 }
-.main-tool-bar {
-}
+
 .main-tool-bar.main-tool-bar--scrolled {
   top: 0;
   left: 0;
